@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DapperDemo
 {
-    public interface IDepartmentRepository
+    public interface IDepartmentRepository //This is a completely abstract class which can only contain abstract methods and properties with empty bodies
+                                           //To access these methods, this interface must be implemented by another class.
     {
         public IEnumerable<Department> GetAllDepartments();
 
